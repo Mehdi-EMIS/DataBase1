@@ -2,7 +2,7 @@ package com.company;
 
 import javax.swing.*;
 
-public class Door extends Main {
+public class Door{
     private JPanel Door;
     private JButton SignB;
     private JButton LogB;
@@ -11,7 +11,9 @@ public class Door extends Main {
     private DbConnection db = new DbConnection();
     private Main function = new Main();
 
-    //function.insert(textField1,textField2);
+    public void Execute(){
+    db.insert(textField1.getText(),textField2.getText());
+    }
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
