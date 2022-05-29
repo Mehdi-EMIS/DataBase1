@@ -1,5 +1,8 @@
 package com.company;
 
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,13 +12,11 @@ import static com.company.DbConnection.insert;
 import static com.company.DbConnection.output;
 
 
-public class Main {
+public class Main extends Door {
 
     public static void main(String[] args) {
-
-
-        //insert("Neta","25");
-        output();
+        //insert("Issac","29");
+       // output();
 
     }
 }

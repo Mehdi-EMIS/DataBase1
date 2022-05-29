@@ -5,6 +5,7 @@ import java.sql.*;
 
 public class DbConnection {
     public static Connection con = null;
+
     public static Connection connect() {
 
         try {
@@ -43,7 +44,8 @@ public class DbConnection {
         Connection con = DbConnection.connect();
         PreparedStatement ps = null;
         try {
-            String sql = "select * from  accounts where password = '12345';";
+            String sql = "select * from  accounts;";
+            //String sql = "select * from  accounts where password = '12345';";
             ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
